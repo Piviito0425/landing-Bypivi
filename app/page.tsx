@@ -1,37 +1,97 @@
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { ExternalLink, Code } from "lucide-react"
+
 export default function HomePage() {
   return (
-    <main className="mx-auto max-w-3xl px-4 py-16">
-      {/* Frase de propósito */}
-      <section className="mb-10">
-        <h1 className="text-3xl font-bold tracking-tight">
-          Construyo micro‑SaaS en público, empezando desde cero y sin saber programar.
-        </h1>
-        <p className="mt-3 text-gray-600">
-          Documento cada paso (errores incluidos) y priorizo validar antes de construir.
-        </p>
-      </section>
+    <div className="min-h-screen bg-background">
+      <header>
+        {/* Hero Section */}
+        <section className="px-4 py-16 md:py-24 max-w-4xl mx-auto text-center">
+          <h1 className="font-bold text-4xl md:text-6xl text-foreground mb-6 font-[family-name:var(--font-space-grotesk)]">
+            Bypivi
+          </h1>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-[family-name:var(--font-dm-sans)]">
+            Construyendo micro-SaaS en público, desde cero
+          </p>
+          <p className="text-lg text-secondary-foreground max-w-2xl mx-auto mb-4 leading-relaxed">
+            Documentando mi viaje de aprender programación y crear productos digitales sin experiencia previa.
+            Transparencia total, errores incluidos.
+          </p>
+          <p className="text-lg text-secondary-foreground max-w-2xl mx-auto mb-4 leading-relaxed">
+            Soy una persona que decidió construir micro-SaaS sin saber programar. Mi enfoque es el "vibe coding" -
+            aprender creando, experimentando y compartiendo cada paso del proceso.
+          </p>
+          <p className="text-lg text-secondary-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
+            Si yo puedo hacerlo sin experiencia previa, tú también puedes.
+          </p>
+          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
+            <a
+              href="https://x.com/bypivi"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Seguir a Bypivi en X.com"
+            >
+              Sígueme en X.com
+              <ExternalLink className="ml-2 h-4 w-4" />
+            </a>
+          </Button>
+        </section>
+      </header>
 
-      {/* 3 problemas */}
-      <section className="mb-10">
-        <h2 className="text-xl font-semibold">Problemas que voy a explorar primero</h2>
-        <ul className="mt-4 space-y-3 list-disc pl-6">
-          <li><strong>Descubrimiento de ideas:</strong> recopilar y ordenar búsquedas reales sobre ideas de SaaS.</li>
-          <li><strong>Validación rápida:</strong> medir interés con páginas “fake-door” y métricas simples.</li>
-          <li><strong>Automatización mínima:</strong> micro‑herramientas que ahorren tiempo a creadores solitarios.</li>
-        </ul>
-      </section>
+      <main>
+        {/* Quién soy Section */}
 
-      {/* CTA */}
-      <section>
-        <a
-          href="https://x.com/bypivi"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block rounded bg-black px-5 py-3 text-white text-sm font-medium hover:bg-gray-900"
-        >
-          Seguir el proceso en X.com (@bypivi)
-        </a>
-      </section>
-    </main>
-  );
+        {/* Mis Proyectos Section */}
+        <section className="px-4 py-16" aria-labelledby="mis-proyectos">
+          <div className="max-w-6xl mx-auto">
+            <h2
+              id="mis-proyectos"
+              className="text-3xl md:text-4xl font-bold text-center mb-12 font-[family-name:var(--font-space-grotesk)]"
+            >
+              Proyectos
+            </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" role="list">
+              {[1, 2, 3, 4, 5, 6].map((i) => (
+                <Card key={i} className="border border-border hover:shadow-lg transition-shadow" role="listitem">
+                  <CardHeader>
+                    <div className="flex items-center gap-2 mb-2">
+                      <Code className="h-5 w-5 text-primary" aria-hidden="true" />
+                      <CardTitle className="text-lg">Proyecto #{i}</CardTitle>
+                    </div>
+                    <CardDescription>
+                      Un micro-SaaS innovador que resolverá un problema específico. Actualmente en desarrollo.
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm text-muted-foreground bg-muted px-2 py-1 rounded">Próximamente</span>
+                      <Button variant="ghost" size="sm" disabled aria-label={`Ver más detalles del Proyecto #${i}`}>
+                        Ver más
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
+
+      {/* Footer */}
+      <footer className="px-4 py-8 bg-muted border-t border-border">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-4">
+            <p className="text-muted-foreground">© 2024 Bypivi. Construido en público con transparencia total.</p>
+          </div>
+          <div className="text-center text-sm text-muted-foreground">
+            <p className="mb-2">Esta web cumple con el RGPD y normativas europeas de protección de datos.</p>
+            <p>
+              No se recopilan datos personales | Sin cookies de seguimiento | Enlaces externos claramente identificados
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  )
 }
