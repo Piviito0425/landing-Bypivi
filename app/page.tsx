@@ -1,18 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { ExternalLink, Code } from "lucide-react"
-import { Analytics } from '@vercel/analytics/react'
-
-export default function RootLayout({ children }) {
-  return (
-    <html lang="es">
-      <body>
-        {children}
-        <Analytics />
-      </body>
-    </html>
-  )
-}
 
 export default function HomePage() {
   return (
