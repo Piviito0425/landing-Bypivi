@@ -80,10 +80,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="font-sans antialiased">
         {children}
-        <footer className="text-center text-sm text-gray-500 p-4 border-t">
-          <a href="/privacy" className="mx-2 hover:underline">Política de Privacidad</a> ·
-          <a href="/terms" className="mx-2 hover:underline">Términos</a>
-        </footer>
         <Analytics />
       </body>
     </html>
