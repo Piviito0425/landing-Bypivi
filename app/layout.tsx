@@ -17,7 +17,7 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Bypivi - Construyendo micro-SaaS en público sin saber programar",
+  title: "Bypivi",
   description:
     "Sigo mi viaje de aprender programación y crear micro-SaaS desde cero. Documentando todo el proceso en público con transparencia total. Vibe coding, errores incluidos.",
   keywords: [
