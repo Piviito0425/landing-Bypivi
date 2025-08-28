@@ -51,29 +51,6 @@ export default function HomePage() {
             >
               Proyectos
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" role="list">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <Card key={i} className="border border-border hover:shadow-lg transition-shadow" role="listitem">
-                  <CardHeader>
-                    <div className="flex items-center gap-2 mb-2">
-                      <Code className="h-5 w-5 text-primary" aria-hidden="true" />
-                      <CardTitle className="text-lg">Proyecto #{i}</CardTitle>
-                    </div>
-                    <CardDescription>
-                      Un micro-SaaS innovador que resolverá un problema específico. Actualmente en desarrollo.
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-muted-foreground bg-muted px-2 py-1 rounded">Próximamente</span>
-                      <Button variant="ghost" size="sm" disabled aria-label={`Ver más detalles del Proyecto #${i}`}>
-                        Ver más
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
           </div>
         </section>
       </main>
