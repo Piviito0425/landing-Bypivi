@@ -51,6 +51,9 @@ export default function HomePage() {
             >
               Proyectos
             </h2>
+            <p className="text-center text-lg text-muted-foreground">
+              Próximamente
+            </p>
           </div>
         </section>
       </main>
