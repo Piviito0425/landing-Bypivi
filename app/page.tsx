@@ -11,11 +11,11 @@ export default function HomePage() {
           {/* Avatar Pixel Art */}
           <div className="mb-8 flex justify-center">
             <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-border shadow-lg bg-muted">
-              <img
-                src="/placeholder-user.jpg"
-                alt="Bypivi - Avatar pixel art"
-                className="w-full h-full object-cover"
-              />
+                             <img
+                 src="/avatar-bypivi.png"
+                 alt="Bypivi - Avatar pixel art"
+                 className="w-full h-full object-cover"
+               />
             </div>
           </div>
           <h1 className="font-bold text-4xl md:text-6xl text-foreground mb-6 font-[family-name:var(--font-space-grotesk)]">
