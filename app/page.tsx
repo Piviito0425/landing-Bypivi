@@ -93,6 +93,41 @@ export default function HomePage() {
               </a>
             </div>
             
+            {/* Borrador Ideas Project */}
+            <div className="max-w-4xl mx-auto mb-8">
+              <a
+                href="https://borrador-ideas.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block group hover:scale-105 transition-transform duration-300"
+                aria-label="Visitar Borrador Ideas"
+              >
+                <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                  <div className="flex flex-col md:flex-row items-center gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="w-24 h-24 bg-gradient-to-br from-green-500 to-purple-600 rounded-lg flex items-center justify-center text-white text-2xl font-bold">
+                        💡
+                      </div>
+                    </div>
+                    <div className="flex-1 text-center md:text-left">
+                      <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                        Borrador Ideas
+                      </h3>
+                      <p className="text-muted-foreground mb-3">
+                        Plataforma para capturar y organizar ideas creativas. Una herramienta digital 
+                        que te permite guardar, categorizar y desarrollar tus proyectos de manera 
+                        eficiente y visualmente atractiva.
+                      </p>
+                      <div className="inline-flex items-center gap-2 text-sm text-primary group-hover:text-primary/80 transition-colors">
+                        <span>Visitar proyecto</span>
+                        <ExternalLink className="h-4 w-4" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
             <p className="text-center text-lg text-muted-foreground">
               Más proyectos próximamente
             </p>
