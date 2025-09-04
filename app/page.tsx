@@ -15,14 +15,7 @@ export default function HomePage() {
                 src="/placeholder-user.jpg"
                 alt="Bypivi - Avatar pixel art"
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                  e.currentTarget.nextElementSibling.style.display = 'flex';
-                }}
               />
-              <div className="w-full h-full flex items-center justify-center text-4xl font-bold text-muted-foreground" style={{display: 'none'}}>
-                👤
-              </div>
             </div>
           </div>
           <h1 className="font-bold text-4xl md:text-6xl text-foreground mb-6 font-[family-name:var(--font-space-grotesk)]">
