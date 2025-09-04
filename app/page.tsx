@@ -10,12 +10,19 @@ export default function HomePage() {
         <section className="px-4 py-16 md:py-24 max-w-4xl mx-auto text-center">
           {/* Avatar Pixel Art */}
           <div className="mb-8 flex justify-center">
-            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-border shadow-lg">
+            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-border shadow-lg bg-muted">
               <img
-                src="/avatar-pixel-art.png"
+                src="/placeholder-user.jpg"
                 alt="Bypivi - Avatar pixel art"
                 className="w-full h-full object-cover"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                  e.currentTarget.nextElementSibling.style.display = 'flex';
+                }}
               />
+              <div className="w-full h-full flex items-center justify-center text-4xl font-bold text-muted-foreground" style={{display: 'none'}}>
+                👤
+              </div>
             </div>
           </div>
           <h1 className="font-bold text-4xl md:text-6xl text-foreground mb-6 font-[family-name:var(--font-space-grotesk)]">
