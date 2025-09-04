@@ -12,18 +12,15 @@ export default function HomePage() {
             Bypivi
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-[family-name:var(--font-dm-sans)]">
-            Construyendo mediante vibe coding en público
+            Construyendo con herramientas vibe coding
           </p>
           <p className="text-lg text-secondary-foreground max-w-2xl mx-auto mb-4 leading-relaxed">
             Documentando mi viaje en la programación y en la creación de productos digitales sin experiencia previa.
-            Transparencia total
           </p>
           <p className="text-lg text-secondary-foreground max-w-2xl mx-auto mb-4 leading-relaxed">
             Soy una persona que quiere aprender creando, experimentando y compartiendo cada paso del proceso.
           </p>
-          <p className="text-lg text-secondary-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-            Si yo puedo hacerlo sin experiencia previa, tú también puedes.
-          </p>
+
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
             <a
               href="https://x.com/bypivi"
