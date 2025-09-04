@@ -8,6 +8,16 @@ export default function HomePage() {
       <header>
         {/* Hero Section */}
         <section className="px-4 py-16 md:py-24 max-w-4xl mx-auto text-center">
+          {/* Avatar Pixel Art */}
+          <div className="mb-8 flex justify-center">
+            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-border shadow-lg">
+              <img
+                src="/avatar-pixel-art.png"
+                alt="Bypivi - Avatar pixel art"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
           <h1 className="font-bold text-4xl md:text-6xl text-foreground mb-6 font-[family-name:var(--font-space-grotesk)]">
             Bypivi
           </h1>
